@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+.searchBar{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5C5C5C;
+    text-align: center;
+}
+.background{
+    position: absolute;
+    top: 72px;
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url('./images/bg.png');
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+}
+.title{
+    position: absolute;
+    width: 378px;
+    height: 47px;
+    left: 200px;
+    top: 286px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+.subtitle{
+    position: absolute;
+width: 327px;
+height: 23px;
+left: 200px;
+top: 337px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.postSection .nav-link{
+    position: relative;
+margin-left: 20px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #8A8A8A;
+}
+.postSection .nav-link:active{
+    color: #000000;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #000000;
+}
+.nav-link:focus:before {
+    display: block;
+    position: absolute;
+    content: "";
+    border: 1px solid #000000;
+    width: 90px;
+    top: 52px;
+
+
+    color: #000000;
+}
+.postSection .btn{
+    /* width: 75px;
+    height: 20px; */
+    
+border-radius: 4px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-profile{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+}
+.post-card{
+    margin: 20px;
+
+}
+.postBox {
+    width:692px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+margin-bottom: 16px;
+}
+.postBox2 {
+    width:692px;
+height:490px;
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+margin-bottom: 16px;
+}
+.postBox .post-title{
+    margin-bottom: 10px;
+}
+.postBox .post-heading{
+    width: 600px;
+height: 60px;
+    
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 134.17%;
+}
+.postBox .post-text{
+    margin-bottom: 12px;
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 134.17%;
+}
+.post-name{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+margin: auto  auto auto 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.info{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-menu{
+    position: absolute;
+    inset: 5px 0px auto auto!important;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08);
+border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.locationbar{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+
+color: #000000;
+outline: none;
+    border: 0;
+}
+
+
+@media (max-width: 768px) {
+    .postBox {
+        width: 360px;
+        height: auto!important;
+    }
+    .postBox .post-heading {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        
+        color: #212529;
+
+    }
+    .postBox .post-text {
+    
+        font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+    }
+    .post-name{
+        font-size: 13px;
+line-height: 17px;
+    }
+    .background{
+     width: 100%;
+height: 236px;
+top: 0;
+    }
+    .title{
+        font-size: 17px;
+line-height: 22px;
+left: 16px;
+top: 188px;
+
+
+    }
+    .subtitle{
+        height: 16px;
+left: 16px;
+top: 212px;
+
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+    }
+    .bgcont{
+        height: 211px!important;
+
+    }
+    .postSection .nav-link {
+        margin-left: 0;
+    }
+    .joinbtn{
+        box-sizing: border-box;
+        font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+
+        position: absolute;
+        width: 76px;
+        height: 28px;
+        right: 6%;
+top:7%;
+        
+        border: 0.8px solid #FFFFFF;
+        border-radius: 4px;
+        color: #FFFFFF;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
 }
